@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "expo-health-50",
-    "slug": "expo-health-50",
+    "name": "expo-health",
+    "slug": "expo-health",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -21,10 +21,22 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
+      },
+      "package": "com.drew.expohealth50",
+      "android": {
+        "permissions": [
+          "android.permission.health.READ_STEPS",
+          "android.permission.health.WRITE_STEPS",
+          "android.permission.health.READ_ACTIVE_CALORIES_BURNED",
+          "android.permission.health.READ_SLEEP"
+        ]
       }
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "plugins": [
+      "expo-health-connect"
+    ]
   }
 }
