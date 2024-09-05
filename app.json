@@ -36,7 +36,17 @@
       "favicon": "./assets/favicon.png"
     },
     "plugins": [
-      "expo-health-connect"
+      ["expo-health-connect"],
+      [
+        "expo-build-properties",
+        {
+          "android": {
+            "compileSdkVersion": 34,
+            "targetSdkVersion": 34,
+            "minSdkVersion": 26
+          }
+        }
+      ]
     ]
   }
 }
